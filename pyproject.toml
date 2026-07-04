@@ -19,5 +19,8 @@ dependencies = [
 [project.scripts]
 docdb-mcp = "docdb_mcp.server:main"
 
+[project.optional-dependencies]
+dev = ["pytest>=8.0.0"]
+
 [tool.hatch.build.targets.wheel]
 packages = ["src/docdb_mcp"]
