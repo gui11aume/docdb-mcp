@@ -16,6 +16,26 @@ citations that appear in different formats across documents:
 
 ## Installation
 
+### Option 1 — Hosted endpoint (no install)
+
+A public MCP server is available at `https://docdb.sarl-graip.fr/mcp` using the
+streamable HTTP transport. Configure your MCP client to point at it directly:
+
+```json
+{
+  "mcpServers": {
+    "docdb": {
+      "type": "streamable-http",
+      "url": "https://docdb.sarl-graip.fr/mcp"
+    }
+  }
+}
+```
+
+No API key or credentials required.
+
+### Option 2 — Local install via uvx
+
 Add this to your MCP client configuration (Claude Desktop, Continue, Cursor, etc.):
 
 ```json
